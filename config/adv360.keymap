@@ -36,9 +36,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LGUI>,
-                <&macro_tap &kp LEFT_SHIFT &kp S>,
-                <&macro_release &kp LGUI>;
+                <&macro_press>,
+                <&kp LGUI &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LGUI>;
 
             label = "MACRO_SNIP_IMAGE";
         };
@@ -47,9 +50,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LGUI>,
-                <&macro_tap &kp LEFT_SHIFT &kp R>,
-                <&macro_release &kp LGUI>;
+                <&macro_press>,
+                <&kp LGUI &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LGUI>;
 
             label = "MACRO_SNIP_VIDEO";
         };
@@ -58,9 +64,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &mo 2>,
-                <&macro_tap &kp LGUI &kp SPACE>,
-                <&macro_release &mo 2>;
+                <&macro_press>,
+                <&mo 2 &kp LGUI>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LGUI &mo 2>;
 
             label = "MACRO_PRINT_SCREEN";
         };
@@ -68,10 +77,13 @@
         macro_open_clipboard: macro_open_clipboard {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-                <&macro_press &kp LGUI>,
-                <&macro_tap &kp V>,
-                <&macro_release &kp LGUI>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LGUI>;
 
             label = "MACRO_OPEN_CLIPBOARD";
         };
