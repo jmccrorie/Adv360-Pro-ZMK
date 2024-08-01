@@ -65,11 +65,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 2 &kp LGUI>,
+                <&kp LGUI &mo 2>,
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
-                <&kp LGUI &mo 2>;
+                <&mo 2 &kp LGUI>;
 
             label = "MACRO_PRINT_SCREEN";
         };
